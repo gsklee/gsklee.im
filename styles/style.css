@@ -1,5 +1,5 @@
 body {
-    background: url(/images/fishes.jpg) no-repeat top center / cover fixed;
+    background: url(../images/fishes.jpg) no-repeat top center / cover fixed;
     overflow: hidden;
     color: white;
 }
