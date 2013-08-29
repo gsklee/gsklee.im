@@ -1,0 +1,8 @@
+{
+    "name": "gsklee.im",
+    "version": "0.0.0",
+    "dependencies": {
+        "bower-foundation-css": "*",
+        "raphael": "~2.1.2"
+    }
+}
