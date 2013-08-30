@@ -4,23 +4,67 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width">
 
-        <title>Foundation 4</title>
+        <title></title>
 
         <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Allura">
-        <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Amaranth">
+        <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Alegreya+SC">
+        <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Asul">
         <link rel="stylesheet" href="components/normalize-css/normalize.css">
+        <link rel="stylesheet" href="components/animate.css/animate.min.css">
         <!--<link rel="stylesheet" href="components/bower-foundation-css/foundation.min.css">-->
         <link rel="stylesheet" href="styles/style.css">
     </head>
 
     <body>
         <main>
-            <h1 class="name">Gias Kay Lee</h1>
+            <header>
+                <h1>Gias Kay Lee</h1>
+                <h2>Professional Frontend & JavaScript Player</h2>
+            </header>
+
+            <section>
+                <div class="effect-slides animated effect-slides-active">
+                    <p class="content-paragraph">Hi! Here's a quick sum up about myself</p>
+                </div>
+                <div class="effect-slides animated">
+                    <p class="content-paragraph">I ♥ sharing and embrace the community</p>
+                </div>
+                <div class="effect-slides animated">
+                    <a href="https://github.com/gsklee" target="_blank">
+                        <img class="content-logo" src="images/logo-github.png" alt="GitHub">
+                        <p class="content-paragraph">I have a project on GitHub called <strong>ngStorage</strong> that people actually use</p>
+                    </a>
+                </div>
+                <div class="effect-slides animated">
+                    <a href="https://twitter.com/gsklee" target="_blank">
+                        <img class="content-logo" src="images/logo-twitter.png" alt="Twitter">
+                        <p class="content-paragraph">And this is my Twitter where I interact with cool developers from all over the world</p>
+                    </a>
+                </div>
+                <div class="effect-slides animated">
+                    <a href="http://slid.es/gsklee" target="_blank">
+                        <img class="content-logo" src="images/logo-slides.png" alt="Slid.es">
+                        <p class="content-paragraph">I've also got a little bit of public speaking experience and am a renowned promoter of Slid.es</p>
+                    </a>
+                </div>
+                <div class="effect-slides animated">
+                    <a href="http://gsklee.im/" target="_blank">
+                        <img class="content-logo" src="images/logo-tumblr.png" alt="Tumblr">
+                        <p class="content-paragraph">Whenever I've got some spare moments, I do a little bit of blogging on Tumblr</p>
+                    </a>
+                </div>
+                <div class="effect-slides animated">
+                    <a href="http://www.linkedin.com/in/giaskaylee" target="_blank">
+                        <img class="content-logo" src="images/logo-linkedin.png" alt="LinkedIn">
+                        <p class="content-paragraph">If you are interested to know more about me, check out my LinkedIn - or let's have a talk ;)</p>
+                    </a>
+                </div>
+            </section>
         </main>
 
-        <div id="waves"></div>
+        <div id="effect-waves"></div>
 
-        <script src="components/raphael/raphael.js"></script>
+        <script src="components/raphael/raphael-min.js"></script>
         <script src="scripts/script.js"></script>
     </body>
 </html>
