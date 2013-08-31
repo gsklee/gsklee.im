@@ -1,12 +1,13 @@
 body {
-    background: url(../images/fishes.jpg) no-repeat top center / cover fixed;
+    background: url(../images/fishes.jpg) no-repeat top center fixed;
+    background-size: cover;
     color: white;
     text-align: center;
     overflow: hidden;
 }
 
 main,
-.effect-slides {
+.effect-dialogs {
     background: rgba(0, 0, 0, 0.5);
 }
 
@@ -60,7 +61,7 @@ hr {
     display: inline-block;
 }
 
-.effect-slides {
+.effect-dialogs {
     position: relative;
     width: 50%;
     padding: 1em;
@@ -69,7 +70,7 @@ hr {
     border-radius: 10px;
 }
 
-.effect-slides::before {
+.effect-dialogs::before {
     content: '';
     position: absolute;
     top: -21px;
@@ -82,7 +83,7 @@ hr {
     border-color: transparent;
 }
 
-.effect-slides::after {
+.effect-dialogs::after {
     content: '';
     position: absolute;
     top: -20px;
@@ -95,32 +96,15 @@ hr {
     border-color: rgba(0, 0, 0, 0.5) transparent;
 }
 
-.effect-slides-active {
+.effect-dialogs-active {
     display: block;
 }
-
-/*
-@-webkit-keyframes slides {
-    from {
-        -webkit-transform: translate3d(0, 0, 0);
-    }
-    to {
-        -webkit-transform: translate3d(-800px, 0, 0);
-    }
-}
-*/
 
 #effect-waves {
     position: absolute;
     left: -100px;
+    bottom: -50px;
 }
-
-/*
-#waves:hover {
-    -webkit-transition: 1s;
-    margin-top: 0 !important;
-}
-*/
 
 path:first-of-type {
     -webkit-animation: waves 30s infinite alternate;

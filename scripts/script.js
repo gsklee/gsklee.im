@@ -1,16 +1,16 @@
 (function() {
     var $ = document.querySelector.bind(document),
-        $effectSlidesActive = $('.effect-slides-active');
+        $effectSlidesActive = $('.effect-dialogs-active');
 
-    $('section').style.height = document.documentElement.clientHeight * 0.3 + 'px';
+    $('section').style.height = document.documentElement.clientHeight * 0.2 + 'px';
 
     $effectSlidesActive.className += ' bounceIn';
 
     setInterval(function() {
-        $effectSlidesActive = $('.effect-slides-active');
+        $effectSlidesActive = $('.effect-dialogs-active');
 
-        $effectSlidesActive.className = 'effect-slides animated';
-        ($effectSlidesActive.nextElementSibling || $('.effect-slides')).className += ' effect-slides-active bounceIn';
+        $effectSlidesActive.className = 'effect-dialogs animated';
+        ($effectSlidesActive.nextElementSibling || $('.effect-dialogs')).className += ' effect-dialogs-active bounceIn';
     }, 6000);
 
     /*/
