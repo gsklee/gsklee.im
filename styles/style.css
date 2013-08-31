@@ -3,6 +3,8 @@ body {
     background-size: cover;
     color: white;
     text-align: center;
+    overflow: hidden;
+    min-height: 768px;
 }
 
 main {
@@ -12,6 +14,7 @@ main {
 
     overflow-x: hidden;
     position: relative;
+    margin: 3em 0;
 }
 
 main,
@@ -22,8 +25,8 @@ main,
 h1 {
     font-family: 'Allura', cursive;
     font-size: 6em;
-    padding-top: 0.2em;
-    margin-bottom: 0;
+    padding-top: 0.5em;
+    margin: 0;
     text-shadow: 0 0 1px black, 6px 6px 20px black;
 }
 
