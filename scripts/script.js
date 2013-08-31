@@ -2,8 +2,6 @@
     var $ = document.querySelector.bind(document),
         $effectSlidesActive = $('.effect-dialogs-active');
 
-    $('section').style.height = document.documentElement.clientHeight * 0.2 + 'px';
-
     $effectSlidesActive.className += ' bounceIn';
 
     setInterval(function() {

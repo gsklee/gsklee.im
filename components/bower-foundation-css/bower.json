@@ -1,8 +1,0 @@
-{
-  "name": "bower-foundation-css",
-  "version": "4.3.1",
-  "main": "./foundation.min.css",
-  "dependencies": {
-    "normalize-css": "*"
-    }
-}

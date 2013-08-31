@@ -12,25 +12,27 @@ body {
     overflow: hidden;
 }
 
+/*/
+/ / iPhone viewport wrapper
+/*/
 .wrapper {
-    /*/
-    / / iPhone
-    /*/
-
     overflow: hidden;
     position: relative;
     min-height: 768px;
 }
 
-main,
 .effect-dialogs {
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, 0.75);
+}
+
+header {
+    background: -webkit-linear-gradient(left, rgba(0,0,0,0.25), rgba(0,0,0,0.7) 20%, rgba(0,0,0,0.75) 80%, rgba(0,0,0,0.25));
+    background: linear-gradient(left, rgba(0,0,0,0.25), rgba(0,0,0,0.7) 20%, rgba(0,0,0,0.75) 80%, rgba(0,0,0,0.25));
 }
 
 h1 {
     font-family: 'Allura', cursive;
     font-size: 6em;
-    padding-top: 0.5em;
     margin-bottom: 0;
     text-shadow: 0 0 1px black, 6px 6px 20px black;
 }
@@ -42,6 +44,7 @@ p {
 
 h2 {
     font-size: 1.5em;
+    padding-bottom: 0.3em;
 }
 
 p {
@@ -53,17 +56,6 @@ a {
     text-decoration: none;
     color: white;
 }
-
-/*
-hr {
-    border: 0;
-    height: 1px;
-    background-image: -webkit-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0));
-    background-image:    -moz-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0));
-    background-image:     -ms-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0));
-    background-image:      -o-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0));
-}
-*/
 
 .content-logo {
     vertical-align: middle;
@@ -110,7 +102,7 @@ hr {
     z-index: 1;
     border-width: 0 25px 20px;
     border-style: solid;
-    border-color: rgba(0, 0, 0, 0.5) transparent;
+    border-color: rgba(0, 0, 0, 0.75) transparent;
 }
 
 .effect-dialogs-active {
