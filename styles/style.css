@@ -3,7 +3,15 @@ body {
     background-size: cover;
     color: white;
     text-align: center;
-    overflow: hidden;
+}
+
+main {
+    /*/
+    / / iPhone
+    /*/
+
+    overflow-x: hidden;
+    position: relative;
 }
 
 main,
