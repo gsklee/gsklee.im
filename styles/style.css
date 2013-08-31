@@ -114,6 +114,7 @@ a {
     position: absolute;
     left: -100px;
     bottom: -50px;
+    z-index: -1;
 }
 
 path:first-of-type {
