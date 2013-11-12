@@ -1,15 +1,44 @@
 (function() {
-    var $ = document.querySelector.bind(document),
-        $effectSlidesActive = $('.effect-dialogs-active');
+    /*/
+    / / Add $.wait()
+    /*/
 
-    $effectSlidesActive.className += ' bounceIn';
+    $.wait = function(time) {
+        return $.Deferred(function() {
+            setTimeout(this.resolve, time);
+        });
+    };
 
-    setInterval(function() {
-        $effectSlidesActive = $('.effect-dialogs-active');
+    /*/
+    / / The dialog boxes
+    /*/
 
-        $effectSlidesActive.className = 'effect-dialogs animated';
-        ($effectSlidesActive.nextElementSibling || $('.effect-dialogs')).className += ' effect-dialogs-active bounceIn';
-    }, 6000);
+    var $effectDialogs = $('.effect-dialogs'),
+        i = 0,
+        _timing;
+
+    $effectDialogs.hide().eq(i).show().addClass('bounceIn');
+    _changeDialogCountdown();
+
+    $('button').on('click', function() {
+        _timing.reject();
+
+        _changeDialog($(this).data('modifier'));
+    });
+
+    function _changeDialogCountdown() {
+        _timing = $.wait(6000).done(function() {
+            _changeDialog(1);
+        });
+    }
+
+    function _changeDialog(modifier) {
+        $effectDialogs.eq(i).removeClass('bounceIn').hide();
+        i = (i + modifier) % $effectDialogs.length;
+        $effectDialogs.eq(i).show().addClass('bounceIn');
+
+        _changeDialogCountdown();
+    }
 
     /*/
     / / Create the wavy shapes with Raphaël

@@ -7,7 +7,7 @@ body,
 body {
     background: url(../images/fishes.jpg) no-repeat top center fixed;
     background-size: cover;
-    color: white;
+    color: #fff;
     text-align: center;
     overflow: hidden;
 }
@@ -21,10 +21,6 @@ body {
     min-height: 768px;
 }
 
-.effect-dialogs {
-    background: rgba(0, 0, 0, 0.75);
-}
-
 header {
     background: -webkit-linear-gradient(left, rgba(0,0,0,0.25), rgba(0,0,0,0.7) 20%, rgba(0,0,0,0.75) 80%, rgba(0,0,0,0.25));
     background: -moz-linear-gradient(left, rgba(0,0,0,0.25), rgba(0,0,0,0.7) 20%, rgba(0,0,0,0.75) 80%, rgba(0,0,0,0.25));
@@ -35,11 +31,12 @@ h1 {
     font-family: 'Allura', cursive;
     font-size: 6em;
     margin-bottom: 0;
-    text-shadow: 0 0 1px black, 6px 6px 20px black;
+    text-shadow: 0 0 1px #000, 6px 6px 20px #000;
 }
 
 h2,
-p {
+p,
+.buttons {
     font-family: 'Asul', sans-serif;
 }
 
@@ -55,7 +52,33 @@ p {
 a {
     display: block;
     text-decoration: none;
-    color: white;
+    color: #fff;
+}
+
+button  {
+    color: #fff;
+    background: none;
+    border: none;
+    padding: 0 6px;
+}
+
+button:not(:last-child) {
+    border-right: 1px solid #000;
+}
+
+.dialogs {
+    display: inline-block;
+    width: 50%;
+}
+
+.buttons {
+    position: absolute;
+    display: inline-block;
+    padding: 0 3px;
+    margin: 25px 0 0 -49px;
+    border-radius: 10px;
+    font-size: 1em;
+    background: rgba(0, 0, 0, 0.75);
 }
 
 .content-logo {
@@ -72,12 +95,12 @@ a {
 
 .effect-dialogs {
     position: relative;
-    width: 50%;
     min-width: 250px;
     padding: 1em;
     margin: 3em auto 0;
-    display: none;
+    display: inline-block;
     border-radius: 10px;
+    background: rgba(0, 0, 0, 0.75);
 }
 
 .effect-dialogs::before {
@@ -104,10 +127,6 @@ a {
     border-width: 0 25px 20px;
     border-style: solid;
     border-color: rgba(0, 0, 0, 0.75) transparent;
-}
-
-.effect-dialogs-active {
-    display: block;
 }
 
 #effect-waves {
